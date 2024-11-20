@@ -5,18 +5,25 @@
 }
 
 body {
-    background-color: #e7eeea;
+    /* background-color: #e7eeea; */
     margin: 0;
+    padding: 0 2rem;
 }
 
 .interface {
-    width: 1170px;
+    width: 100%;
     margin: auto;
 }
 
 header {
     background-color: #fff;
-    padding: 15px 0px;
+    padding: 1rem 2rem;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header img {
@@ -24,7 +31,6 @@ header img {
 }
 
 header ul {
-    float: right;
     /* display: inline-block; */
     margin: 10px 0px 0px 0px;
 }
@@ -43,4 +49,135 @@ header nav ul li a {
 
 header main nav ul li a:hover {
     color: #5c6761
+}
+
+/* SEÇÃO HOME */
+#home{
+    background-image: url('../images/fundo-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home main {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+}
+
+#home main div{
+    margin: auto 1.5rem;
+}
+
+#home h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#home p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 1.2rem;
+}
+
+#sobre{
+    color: #282e2b
+}
+
+#sobre main{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre main .conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sobre h1{
+    margin: 1rem 0 0 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+#sobre .borda{
+    width: 8rem;
+    background-color: #282e2b;
+    height: .2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+#sobre main .conteudo div{
+    margin: 0 1.5rem;
+}
+
+#sobre main p{
+    text-align: justify;
+}
+
+/* SEÇÃO PORTFÓLIO */
+#portfolio{
+    background-color: #282e2b;
+    color: #fff;
+}
+
+#portfolio .interface{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .interface .conteudo{
+    display: flex;
+    flex-direction: row;
+    margin: .3rem 0;
+    justify-content: center;
+}
+
+#portfolio h1{
+    margin: 1rem 0 0 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+#portfolio .borda{
+    width: 8rem;
+    background-color: #fff;
+    height: .2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+#portfolio .conteudo figure{
+    background-color: #fff;
+    color: #282e2b;
+}
+
+#portfolio .conteudo figcaption{
+    padding: .3rem 0;
+}
+
+#portfolio .conteudo figcaption h2{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#portfolio .conteudo figcaption p{
+    margin: 0;
+    text-align: center;
 }
